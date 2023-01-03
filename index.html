@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Testing form</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login-container">
+      <!-- <h1 class="title">Login</h1> -->
+      <img
+        class="icon"
+        src="https://www.svgrepo.com/show/254567/firewall.svg"
+        alt="icon"
+      />
+
+      <form class="form" id="login">
+        <div class="form__input-group">
+          <input
+            name="username"
+            class="form__input"
+            id="uName"
+            type="text"
+            autofocus
+            placeholder="Username or Email"
+          />
+        </div>
+
+        <div class="form__input-group">
+          <input
+            name="password"
+            class="form__input"
+            id="pWord"
+            type="password"
+            placeholder="Password"
+          />
+        </div>
+
+        <button class="form__button" onclick="compareId(ids)">
+          Login
+        </button>
+
+        <div class="form__input-group" id="msgs" style="display: none;">
+          <p id="p1">111</p>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      window.ids = {
+        username: "Tim",
+        password: "Jones"
+        //        document.getElementById("msgs").style.display = "none";
+      };
+
+      // short coding long text to variables
+      const DispMessage = document.getElementById("msgs");
+
+      //receive entries
+
+      //if comparing object & entries ids are same return welcome message.
+
+      function compareId() {
+        if ()
+        DispMessage.style.display = "block";
+        DispMessage.innerHTML = "Welcome " + window.ids.username;
+        console.log(window.ids.username + ": logged in.");
+      }
+    </script>
+  </body>
+</html>
